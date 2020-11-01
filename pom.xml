@@ -12,7 +12,7 @@
         <module>gateway</module>
         <module>serivce1</module>
         <module>common</module>
-        <module>logModule</module>
+        <module>logsModule</module>
         <module>logsModule</module>
     </modules>
 
