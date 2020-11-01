@@ -1,0 +1,26 @@
+2020-09-07 16:30:52.017  INFO 11176 --- [main] service1.Service1Application             : No active profile set, falling back to default profiles: default
+2020-09-07 16:30:52.519  WARN 11176 --- [main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2020-09-07 16:30:52.593  INFO 11176 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=75347221-c29e-3f9d-90f4-fb5b0b465d5f
+2020-09-07 16:30:52.767  INFO 11176 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2020-09-07 16:30:52.774  INFO 11176 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-09-07 16:30:52.776  INFO 11176 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-09-07 16:30:52.857  INFO 11176 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-09-07 16:30:52.857  INFO 11176 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 799 ms
+2020-09-07 16:30:52.956  WARN 11176 --- [main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'nacos-discovery' contains invalid characters, please migrate to a valid format.
+2020-09-07 16:30:53.011  WARN 11176 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-09-07 16:30:53.011  INFO 11176 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-09-07 16:30:53.015  WARN 11176 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-09-07 16:30:53.015  INFO 11176 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-09-07 16:30:53.131  INFO 11176 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-07 16:30:53.341  INFO 11176 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'Nacso-Watch-Task-Scheduler'
+2020-09-07 16:30:53.737  INFO 11176 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 19 endpoint(s) beneath base path '/actuator'
+2020-09-07 16:30:53.859  INFO 11176 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2020-09-07 16:30:53.949  INFO 11176 --- [main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP nacos-provider 192.168.0.102:8081 register finished
+2020-09-07 16:30:54.061  INFO 11176 --- [main] service1.Service1Application             : Started Service1Application in 2.965 seconds (JVM running for 3.686)
+2020-09-07 16:30:54.110  INFO 11176 --- [RMI TCP Connection(1)-192.168.0.102] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-09-07 16:30:54.110  INFO 11176 --- [RMI TCP Connection(1)-192.168.0.102] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-09-07 16:30:54.115  INFO 11176 --- [RMI TCP Connection(1)-192.168.0.102] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2020-09-07 16:33:40.752  INFO 11176 --- [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'Nacso-Watch-Task-Scheduler'
+2020-09-07 16:33:40.753  INFO 11176 --- [SpringContextShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registering from Nacos Server now...
+2020-09-07 16:33:40.757  INFO 11176 --- [SpringContextShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registration finished.
+2020-09-07 16:33:40.759  INFO 11176 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'

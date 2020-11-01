@@ -1,0 +1,36 @@
+server:
+  port: 8081
+
+
+spring:
+  application:
+    name: nacos-provider
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+  rabbitmq:
+    host: 192.168.21.128
+    port: 5672
+    username: admin
+    password: admin
+    virtual-host: my_vhost
+    publisher-returns: true #开启消息可达监听
+    publisher-confirm-type: correlated #必须配置这个才能确认回调
+    template:
+      mandatory: true #开启这个不可达消息才不会被删除
+    connection-timeout: 5000 #超时时间
+
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+
+
+logging:
+  file:
+    path: /home
+    name: service1.log
+

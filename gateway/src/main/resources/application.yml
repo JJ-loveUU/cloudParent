@@ -1,0 +1,35 @@
+
+spring:
+  application:
+    name: gateway
+  cloud:
+    gateway:
+      httpclient:
+        connect-timeout: 1000
+        response-timeout: 5s
+      routes:
+        - id: after_route
+          uri: lb://nacos-provider
+          predicates:
+            - Path=/nacos-provider/**
+          filters:
+            - StripPrefix=1
+#            - CustomerFilter
+#            - name: RequestSize
+#              args:
+#                maxSize: 1
+
+
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+
+
+#debug: true

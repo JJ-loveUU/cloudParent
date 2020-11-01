@@ -1,0 +1,17 @@
+server:
+  port: 8083
+
+
+spring:
+  application:
+    name: logs-consumer
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+  rabbitmq:
+    host: 192.168.21.128
+    port: 5672
+    username: admin
+    password: admin
+    virtual-host: my_vhost
